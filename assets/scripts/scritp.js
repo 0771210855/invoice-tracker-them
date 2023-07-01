@@ -13,44 +13,50 @@ $(document).ready(function(){
 });
 
 
-$('#notifi-icon').click(function(){
-  if( $(".notifi-drop").hasClass( "notifi-hide" ) ){
-          $('.notifi-drop').removeClass(".notifi-hide");
+$('#notifi-icon').click(function(event){
+  if( $(".notifi-drop").hasClass( "notifi-hide" ) ){    
+          $('.notifi-drop').removeClass("notifi-hide");
   }
   else {
-          $('.notifi-drop').addClass(".notifi-hide");
+      $('.notifi-drop').addClass("notifi-hide");    
+  } 
+
+});
+
+$('#profile-img').click(function(event){
+  if( $(".my-drop").hasClass( "hide" ) ){    
+          $('.my-drop').removeClass("hide");
   }
+  else {
+      $('.my-drop').addClass("hide");    
+  } 
+
 });
 
 
+/****************Side menu toggles and active classes***************/
+$(document).ready(function() {
+  // Tab Click Event
+  $('.side-menu li a').on('click', function(e) {
+    e.preventDefault();
 
-//  $('.menu li[class=""] span').click(function() {
-//   const self = $(this).parent();
-//   self.toggleClass("menu-open");
-// });
+    // Check if the clicked tab has a dropdown menu
+    if ($(this).parent().hasClass('dropdown')) {
+      $('.side-menu .inner-menu').addClass('show')
+    } else {      
+    // Remove active class from all tabs
+    $('.side-menu li ').removeClass('active');    
+    // Add active class to the clicked tab
+    $(this).parent().addClass('active');
+      // Hide all dropdown menus
+      $('.inner-menu').removeClass('active');
+    }
+  });
 
-// if($('.menu li[class=""]').find('li.active').length !== 0){
-//   $(this).addClass("menu-open");
-// }
+  // Inner Element Click Event
+  $('.inner-menu li a').on('click', function() {
+    // Add active class to the inner element
+    $(this).addClass('active');
+  });
+});
 
-
-
-// $(function() {
-
-//   $('.menu li[class=""] span').click(function() {
-//       const self = $(this).parent();
-//       self.toggleClass("menu-open");
-//   });
-
-//   if($('.menu li[class=""]').find('li.active').length !== 0){
-//       $(this).addClass("menu-open");
-// }
-
-// });
-
-
-// $('.menu li').each(function() {
-//   if($(this).find('li.active').length !== 0) {
-//     $(this).addClass('menu-open');
-//   }
-// });

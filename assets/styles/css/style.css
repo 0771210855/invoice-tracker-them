@@ -96,6 +96,7 @@ body {
 
 .side-menu ul {
   list-style-type: none;
+  margin-left: -16px;
 
 }
 
@@ -104,15 +105,20 @@ body {
   font-size: 15px;
   display: block;
   width: 100%;
-  margin-left: -8px;
+  cursor: pointer;
+  padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  border-left: 8px solid #f5f7f9;
 
+}
+.side-menu ul li.active {
+  background-color: #00AA67;
+  border-left: 8px solid #eb8221;
 }
 
 .side-menu ul li a {
   color: #444;
-
 }
 
 .side-menu ul li .fa {
@@ -123,6 +129,12 @@ body {
 .side-menu .inner-menu ul li .fa {
   font-size: 14px;
 }
+.side-menu .inner-menu{
+  display: none;
+}
+.side-menu .inner-menu.show{
+  display: block;
+}
 
 
 .msb .nb {
@@ -131,6 +143,25 @@ body {
   margin-bottom: 30px;
   overflow: hidden;
 }
+.msb .mobile-x{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .msb {
+    width: 100%;
+  }
+  .msb .mobile-x {
+    display: block;
+  }
+  .msb .mobile-x i{  
+    margin-left: 200px; 
+   font-weight: 600;
+   font-size: 20px;   
+  }
+  
+}
+
 
 ul.nv,
 ul.ns {
@@ -184,20 +215,9 @@ ul.ns {
   font-size: 20px;
 }
 
-.top-navbar .user {
-  margin-right: 30px;
-}
-
-.top-navbar .user img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-
-
 .top-navbar .notifi-numb>div {
-  height: 16px;
-  width: 16px;
+  height: 8px;
+  width: 8px;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 3px;
@@ -209,6 +229,61 @@ ul.ns {
   text-align: center;
 
 }
+.top-navbar .notification{
+  margin-right: 20px;
+}
+.top-navbar .notification .notifi-drop {
+  margin-top: 18px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  background-color: #f5f7f9;
+  border-radius: 2px;
+  position: absolute;
+  margin-left: -110px;
+  height: auto;
+  max-height: 400px;
+  overflow: auto;
+  width: 225px;
+}
+.top-navbar .notification .notifi-hide{
+  display: none;
+}
+
+.top-navbar .notification .notifi-head{
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.top-navbar .notification .content{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.top-navbar .notification .content>div{
+  border-bottom: 1px solid #eee;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.top-navbar .notification .content>div:hover{
+  background-color: #ebf2f8;
+}
+.top-navbar .notification .content .msg {
+  font-size: 12px;
+  margin-top: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.top-navbar .notification .content .time {
+  text-align: right;
+  font-size: 10px;
+  color: #F06D24;
+}
 
 .top-navbar .notifi-numb>div>span {
   font-size: 9px;
@@ -217,37 +292,58 @@ ul.ns {
 
 .top-navbar .notification .notifi-numb {
   display: flex;
-  
+  align-items: center;    
 }
 .top-navbar .notification i.fa{
-  margin-top: 5px;
-  font-size: 25px;
-}
-.top-navbar .notification .notifi-drop {
-  display: block;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  border-radius: 2px;
-  margin-top: 5px;
-  position: absolute;
-  margin-left: -110px;
-  height: auto;
-  max-height: 400px;
-  overflow: auto;
-  width: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+
 }
 
-
-.top-navbar .user{
+.top-navbar .user {
   position: relative;
 }
 
+.top-navbar .user img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.top-navbar .user .profile-img {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 10px;
+margin-bottom: 8px;
+width: 100px;
+}
+
 .top-navbar .my-drop {
+  margin-top: -1px;
   border: 1px solid #ddd;
-  background-color: #fff;
-  border-radius: 2px;
-  margin-top: 5px;
-  position: absolute;
+  background-color: #f5f7f9;
+  border-radius: 5px;
+  width: 100px;
+  
+}
+.top-navbar .hide{
+  display: none;
+}
+
+.top-navbar .my-drop .item a{
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+.top-navbar .my-drop .item a:hover{
+  color: #F06D24;
+}
+.top-navbar .my-drop .item a span.fa{
+  margin-right: 5px;
 }
 
 /*main content wrapper*/
@@ -551,4 +647,5 @@ margin-left: 30px;
   margin-bottom: 40px;
   margin-top: 30px;
 }
+
 

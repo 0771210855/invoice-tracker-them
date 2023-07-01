@@ -149,7 +149,7 @@ body {
 
 @media (max-width: 768px) {
   .msb {
-    width: 100%;
+    width: 90%;
   }
   .msb .mobile-x {
     display: block;

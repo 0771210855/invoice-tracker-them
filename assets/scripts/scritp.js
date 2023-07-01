@@ -3,6 +3,11 @@ $(document).ready(function(){
    $('#msbo').on('click', function(){
      $('body').toggleClass('msb-x');
    });
+
+   
+   $('.mobile-x').click(function(){
+    $('body').addClass('msb-x');
+   })
  }());
 
 

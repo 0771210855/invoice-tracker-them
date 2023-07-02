@@ -16,130 +16,137 @@
 </head>
 
 <body>
+   <div class="content-wrap" id="content-wrap">
+      <!--msb: main sidebar-->
+      <div>
+         <div class="msb" id="msb">
+            <div class="" role="navigation">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="brand">
+                  <div class="logo">
+                     <img src="psiug.png" alt="" />
+                  </div>
+                  <div class="brand-name">
+                     Invoice tracker
+                  </div>
+               </div>
 
-   <!--msb: main sidebar-->
-   <div class="msb" id="msb">
-      <div class="" role="navigation">
-         <!-- Brand and toggle get grouped for better mobile display -->
-         <div class="brand">
-            <div class="logo">
-               <img src="psiug.png" alt="" />
+               <div class="user-info d-flex">
+                  <div class="mx-auto">
+                     <div class="pic">
+                        <img src="avator.png" alt="">
+                     </div>
+                     <div class="info">
+                        <div>masuba Abdqadir</div>
+                        <div>my title - procuremnt</div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Main Menu -->
+               <div class="side-menu" id="side-menu">
+                  <ul class="">
+                     <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                     <!-- Dropdown-->
+                     <li class="dropdown">
+                        <a class="dropdown" id="dropdown"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                           Invoices</a>
+                        <div class="inner-menu" id="menu">
+                           <ul class="">
+                              <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> New Invoice</a></li>
+                              <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> Incoming Invoices</a>
+                              </li>
+                              <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> Rejected Invoices</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Notification Logs</a></li>
+                     <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></i> My Profile</a></li>
+                     <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+                  </ul>
+               </div>
+               <!-- /.navbar-collapse -->
             </div>
-            <div class="brand-name">
-               Invoice tracker
-            </div>
-            <div class="mobile-x" ><i class="fa fa-times"></i></div>
          </div>
-
-         <div class="user-info d-flex">
-            <div class="mx-auto">
-               <div class="pic">
-                  <img src="avator.png" alt="">
-               </div>
-               <div class="info">
-                  <div>masuba Abdqadir</div>
-                  <div>my title - procuremnt</div>
-               </div>
-            </div>
-         </div>
-
-         <!-- Main Menu -->
-         <div class="side-menu" id="side-menu">
-            <ul class="">
-               <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-               <!-- Dropdown-->
-               <li class="dropdown">
-                  <a class="dropdown" id="dropdown"><i class="fa fa-file-text-o" aria-hidden="true"></i> Invoices</a>
-                  <div class="inner-menu" id="menu">
-                     <ul class="">
-                        <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> New Invoice</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> Incoming Invoices</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i> Rejected Invoices</a></li>
-                     </ul>
-                  </div>
-               </li>
-               <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Notification Logs</a></li>
-               <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></i> My Profile</a></li>
-               <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
-            </ul>
-         </div>
-         <!-- /.navbar-collapse -->
-      </div>
-   </div>
-
-
-   <!-- end main side bar -->
-
-
-
-   <!--main content wrapper-->
-   <div class="mcw">
-      <!--navigation here-->
-      <!-- Top nav bar -->
-      <div class="mnb">
-         <div class="container-fluid top-navbar">
-            <div class="my-auto">
-               <a href="#" id="msbo"><i class="ms-2 ic fa fa-bars"></i></a>
-            </div>
-            <div class="ms-auto my-auto d-flex">
-               <div class="notification">
-                  <div class="notifi-numb" id="notifi-icon">
-                     <i class="fa fa-bell-o" aria-hidden="true"></i>
-                     <div>
-                        <div></div>
-                     </div>
-                  </div>
-                  <div class="notifi-drop notifi-hide">
-                     <div class="notifi-head">
-                        <div class="">you have 2 notifications</div>
-                     </div>
-                     <div class="content">
-                        <div>
-                           <div class="msg">Invoice ID1243 is created</div>
-                           <div class="time">2mins ago</div>
-                        </div>
-                        <div>
-                           <div class="msg">Rejected invoice ID1243 to procurement and other tst valuse for the tst
-                              purposes</div>
-                           <div class="time">2mins ago</div>
-                        </div>
-                        <div>
-                           <div class="msg">Rejected invoice ID1243 to procurement</div>
-                           <div class="time">2mins agofgdfrgeds</div>
-                        </div>
-                        <div>
-                           <div class="msg">Rejected invoice ID1243 to procurement</div>
-                           <div class="time">2mins ago</div>
-                        </div>
-
-                     </div>
-                  </div>
-               </div>
-
-               <div class="user">
-                  <div class="profile-img" id="profile-img">
-                     <img src="avator.png" alt="">
-                  </div>
-
-                  <div class="my-drop hide">
-                     <div class="container-fluid">
-                        <div class="item"><a href="#"><span class="fa fa-address-book-o"></span>account</a></div>
-                        <div class="item"><a href=""><span class="fa fa-user-circle-o"></span>Profile</a></div>
-                        <div class="item"><a href=""><span class="fa fa-sign-out"></span>logout</a></div>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
+         <div class="mobile-sb-close">
          </div>
       </div>
-      <!-- End of top nav bar -->
-      <!--main content view-->
-      <main class="cv">
-         <div>
 
+
+      <!-- end main side bar -->
+
+
+
+      <!--main content wrapper-->
+      <div class="mcw" id="mcw">
+         <!--navigation here-->
+         <!-- Top nav bar -->
+         <div class="mnb">
+            <div class="container-fluid top-navbar">
+               <div class="my-auto">
+                  <a href="#" id="msbo"><i class="ms-2 ic fa fa-bars"></i></a>
+               </div>
+               <div class="ms-auto my-auto d-flex">
+                  <div class="notification">
+                     <div class="notifi-numb" id="notifi-icon">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        <div>
+                           <div></div>
+                        </div>
+                     </div>
+                     <div class="notifi-drop notifi-hide">
+                        <div class="notifi-head">
+                           <div class="">you have 2 notifications</div>
+                        </div>
+                        <div class="content">
+                           <div>
+                              <div class="msg">Invoice ID1243 is created</div>
+                              <div class="time">2mins ago</div>
+                           </div>
+                           <div>
+                              <div class="msg">Rejected invoice ID1243 to procurement and other tst valuse for the tst
+                                 purposes</div>
+                              <div class="time">2mins ago</div>
+                           </div>
+                           <div>
+                              <div class="msg">Rejected invoice ID1243 to procurement</div>
+                              <div class="time">2mins agofgdfrgeds</div>
+                           </div>
+                           <div>
+                              <div class="msg">Rejected invoice ID1243 to procurement</div>
+                              <div class="time">2mins ago</div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="user">
+                     <div class="profile-img" id="profile-img">
+                        <img src="avator.png" alt="">
+                     </div>
+
+                     <div class="my-drop hide">
+                        <div class="container-fluid">
+                           <div class="item"><a href="#"><span class="fa fa-address-book-o"></span>account</a></div>
+                           <div class="item"><a href=""><span class="fa fa-user-circle-o"></span>Profile</a></div>
+                           <div class="item"><a href=""><span class="fa fa-sign-out"></span>logout</a></div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
          </div>
-      </main>
+         <!-- End of top nav bar -->
+         <!--main content view-->
+         <main class="cv">
+            <div>
+
+            </div>
+         </main>
+      </div>
    </div>
    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

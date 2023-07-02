@@ -4,25 +4,36 @@ body {
   font-size: 14px;
   letter-spacing: 0.01em;
   color: #39464e;
+
 }
 
-.pi-blue{
+.content-wrap {
+  margin: 0;
+  padding: 0;
+}
+
+.pi-blue {
   background-color: #8FC7C7;
 }
-.pi-green{
+
+.pi-green {
   background-color: #00AA67;
 }
-.pi-orange{
-  background-color:#F06D24 ;
+
+.pi-orange {
+  background-color: #F06D24;
 }
-.pi-black{
+
+.pi-black {
   background-color: #020202;
 }
-.pi-mangeta{
+
+.pi-mangeta {
   background-color: #EA4996;
 
 }
-.pi-yellow{
+
+.pi-yellow {
   background-color: #FCF062;
 }
 
@@ -112,9 +123,16 @@ body {
   border-left: 8px solid #f5f7f9;
 
 }
-.side-menu ul li.active {
+
+.side-menu ul li.active
+ {
   background-color: #00AA67;
   border-left: 8px solid #eb8221;
+}
+.side-menu ul li.active a,
+.side-menu ul li a:hover,
+.side-menu ul li a:focus{
+  font-weight: 600;  
 }
 
 .side-menu ul li a {
@@ -129,10 +147,12 @@ body {
 .side-menu .inner-menu ul li .fa {
   font-size: 14px;
 }
-.side-menu .inner-menu{
+
+.side-menu .inner-menu {
   display: none;
 }
-.side-menu .inner-menu.show{
+
+.side-menu .inner-menu.show {
   display: block;
 }
 
@@ -143,23 +163,23 @@ body {
   margin-bottom: 30px;
   overflow: hidden;
 }
-.msb .mobile-x{
+.mobile-sb-close{
   display: none;
 }
 
 @media (max-width: 768px) {
   .msb {
-    width: 90%;
+    width: 65%;
+    position: absolute;
   }
-  .msb .mobile-x {
+  .mobile-sb-close{
     display: block;
+    height: 100vh;
+    background-color: rgb(68, 68, 68,0.5);
+    margin-left: auto;
+    width: 35%;
   }
-  .msb .mobile-x i{  
-    margin-left: 200px; 
-   font-weight: 600;
-   font-size: 20px;   
-  }
-  
+
 }
 
 
@@ -229,9 +249,11 @@ ul.ns {
   text-align: center;
 
 }
-.top-navbar .notification{
+
+.top-navbar .notification {
   margin-right: 20px;
 }
+
 .top-navbar .notification .notifi-drop {
   margin-top: 18px;
   border-radius: 2px;
@@ -245,11 +267,12 @@ ul.ns {
   overflow: auto;
   width: 225px;
 }
-.top-navbar .notification .notifi-hide{
+
+.top-navbar .notification .notifi-hide {
   display: none;
 }
 
-.top-navbar .notification .notifi-head{
+.top-navbar .notification .notifi-head {
   font-weight: 600;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -257,18 +280,22 @@ ul.ns {
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
-.top-navbar .notification .content{
+
+.top-navbar .notification .content {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-.top-navbar .notification .content>div{
+
+.top-navbar .notification .content>div {
   border-bottom: 1px solid #eee;
   padding-right: 10px;
   padding-left: 10px;
 }
-.top-navbar .notification .content>div:hover{
+
+.top-navbar .notification .content>div:hover {
   background-color: #ebf2f8;
 }
+
 .top-navbar .notification .content .msg {
   font-size: 12px;
   margin-top: 8px;
@@ -279,6 +306,7 @@ ul.ns {
   text-overflow: ellipsis;
   white-space: normal;
 }
+
 .top-navbar .notification .content .time {
   text-align: right;
   font-size: 10px;
@@ -292,9 +320,10 @@ ul.ns {
 
 .top-navbar .notification .notifi-numb {
   display: flex;
-  align-items: center;    
+  align-items: center;
 }
-.top-navbar .notification i.fa{
+
+.top-navbar .notification i.fa {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 22px;
@@ -313,13 +342,14 @@ ul.ns {
   width: 40px;
   border-radius: 50%;
 }
+
 .top-navbar .user .profile-img {
-display: flex;
-align-items: center;
-justify-content: center;
-margin-right: 10px;
-margin-bottom: 8px;
-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  width: 100px;
 }
 
 .top-navbar .my-drop {
@@ -328,21 +358,24 @@ width: 100px;
   background-color: #f5f7f9;
   border-radius: 5px;
   width: 100px;
-  
+
 }
-.top-navbar .hide{
+
+.top-navbar .hide {
   display: none;
 }
 
-.top-navbar .my-drop .item a{
+.top-navbar .my-drop .item a {
   display: flex;
   border-bottom: 1px solid #ddd;
   align-items: center;
 }
-.top-navbar .my-drop .item a:hover{
+
+.top-navbar .my-drop .item a:hover {
   color: #F06D24;
 }
-.top-navbar .my-drop .item a span.fa{
+
+.top-navbar .my-drop .item a span.fa {
   margin-right: 5px;
 }
 
@@ -354,7 +387,7 @@ width: 100px;
   /*content view*/
 }
 
-.bread-crumb{
+.bread-crumb {
   margin-top: 15px;
   border-radius: 5px;
   width: 96%;
@@ -364,8 +397,8 @@ width: 100px;
   background-color: #eee;
 }
 
-.bread-crumb .cont{
- 
+.bread-crumb .cont {
+
   margin-left: 25px;
   font-weight: 18px;
   font-weight: 600;
@@ -569,6 +602,13 @@ body.msb-x .msb {
   color: #2190eb;
 }
 
+main .cont-container{
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+}
+
 
 /* Regisister user form */
 .add-use {
@@ -593,7 +633,8 @@ body.msb-x .msb {
   background-color: #8FC7C7;
   height: 40px;
 }
-.add-user .cont-card .head h3{
+
+.add-user .cont-card .head h3 {
   font-weight: 500;
   font-size: 18px;
   padding-top: 10px;
@@ -601,13 +642,13 @@ body.msb-x .msb {
 }
 
 /* Regisister user form */
-.User-list{
+.User-list {
   width: 96%;
   margin-left: 2%;
   margin-right: 2%;
 }
 
-.User-list .content{
+.User-list .content {
   margin-top: 30px;
   overflow-x: auto;
 }
@@ -615,37 +656,101 @@ body.msb-x .msb {
 
 
 /* pdf view page */
-.pdf-view{
+.pdf-view {
   margin: 2%;
   width: 96%;
 }
 
-.pdf-view .content .item{
-display: inline;
+.pdf-view .content .item {
+  display: inline;
 }
 
-.pdf-view .content .value{
-display: inline;
-margin-left: 30px;
+.pdf-view .content .value {
+  display: inline;
+  margin-left: 30px;
 
 }
 
-.pdf-view .pdf-doc{
+.pdf-view .pdf-doc {
   height: 100vh;
   border: 1px solid #ddd;
 
 }
 
-.pdf-view .pdf-doc object{
+.pdf-view .pdf-doc object {
   width: 100%;
   height: 100vh;
 
 }
 
-.pdf-view .pdf-doc button{
+.pdf-view .pdf-doc button {
   width: 350px;
   margin-bottom: 40px;
   margin-top: 30px;
 }
 
+.profile .cover{
+  height: 150px;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 2px;
+}
 
+.profile .image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-top: -35px;
+
+}
+.profile .image img{
+  height: 100%;
+  width: 100%;
+}
+
+
+.profile .tab {
+  float: left;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 15%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+/* Style the buttons inside the tab */
+.profile .tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 15px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.profile .tab button:hover {
+  background-color: #8FC7C7;
+}
+
+/* Create an active/current "tab button" class */
+.profile .tab button.active {
+  background-color: #8FC7C7;
+}
+
+/* Style the tab content */
+.profile .tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ddd;
+  width: 85%;
+  border-left: none;
+  height: 200px;
+  margin-top: 20px;
+}
